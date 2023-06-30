@@ -1,0 +1,10 @@
+{
+	"lang":"zh-cn",
+	"text":{
+		"mainwindow_title": "Snowflake screen generator",
+		"mainwindow_generate": "Click to generate",
+		"waitingwindow_title": "wait...",
+		"waitingwindow_text": "generating,please wait...",
+		"texturewindow_view": "view"
+	}
+}

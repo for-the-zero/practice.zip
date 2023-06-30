@@ -1,0 +1,10 @@
+{
+	"lang":"cn",
+	"text":{
+		"mainwindow_title": "雪花屏生成器",
+		"mainwindow_generate": "点击生成",
+		"waitingwindow_title": "生成中",
+		"waitingwindow_text": "生成中，等亿下……",
+		"texturewindow_view": "预览"
+	}
+}
