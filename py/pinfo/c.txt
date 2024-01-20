@@ -1,0 +1,56 @@
+> adb shell df /data
+Filesystem            1K-blocks     Used Available Use% Mounted on
+/dev/block/mmcblk0p59  53942256 49984080   3958176  93% /data
+
+> adb shell dumpsys battery
+Current Battery Service state:
+  AC powered: false
+  USB powered: true
+  Wireless powered: false
+  Max charging current: 500000
+  Max charging voltage: 5015000
+  Charge counter: 20000
+  status: 2
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4368
+  temperature: 340
+  technology: Li-poly
+
+> adb shell cat /proc/cpuinfo
+Processor       : AArch64 Processor rev 4 (aarch64)
+processor       : 0
+BogoMIPS        : 3.84
+Features        : fp asimd evtstrm aes pmull crc32
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+processor       : 1
+BogoMIPS        : 3.84
+Features        : fp asimd evtstrm aes pmull crc32
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+...
+
+> adb shell top -n 1
+Tasks: 557 total,   1 running, 518 sleeping,   0 stopped,   0 zombie
+Mem:   3874144k total,  3709544k used,   164600k free,    31108k buffers
+Swap:  2293756k total,  1078788k used,  1214968k free,  1295312k cached
+800%cpu  90%user   0%nice  45%sys 665%idle   0%iow   0%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+23784 u0_a220      10 -10 2.2G 253M 105M S 45.1   6.6  58:45.95 com.spotify.mus+
+...
+
+> adb shell cat /proc/meminfo
+MemTotal:        3874144 kB
+MemFree:           84056 kB
+MemAvailable:    1349760 kB
+...
