@@ -1,0 +1,16 @@
+PS C:\Users\hao\Desktop\apkget> ./adb shell pm list packages -3 -f
+package:/data/app/com.quark.browser-IyjWJ6IwPhbhL4sSrmm4YA==/base.apk=com.quark.browser    
+package:/data/app/wangdaye.com.geometricweather-DTmEn8HTZyV3M444wab7ZA==/base.apk=wangdaye.com.geometricweather
+package:/data/app/org.getlantern.lantern-JNl-rXElMExwwo0eiR3OXQ==/base.apk=org.getlantern.lantern
+package:/data/app/com.niksoftware.snapseed-EHbgftY_5qJJ8rqdKPnSAA==/base.apk=com.niksoftware.snapseed
+
+PS C:\Users\hao\Desktop\apkget> ./adb push aapt-arm-pie /data/local/tmp
+aapt-arm-pie: 1 file pushed, 0 skipped. 93.3 MB/s (803348 bytes in 0.008s)
+PS C:\Users\hao\Desktop\apkget> ./adb shell chmod 0755 /data/local/tmp/aapt-arm-pie
+
+PS C:\Users\hao\Desktop\apkget> ./adb shell /data/local/tmp/aapt-arm-pie dump badging /data/app/com.lemonpiggy.school-mFC33lVL-YPh1lnmD3I1dA==/base.apk
+package: name='com.lemonpiggy.school' versionCode='2050104' versionName='2.5.1' platformBuildVersionName=''
+application-label:'柠檬自习室'
+application: label='柠檬自习室' icon='res/mipmap-anydpi-v26/icon.xml'
+
+PS C:\Users\hao\Desktop\apkget> ./adb shell rm /data/local/tmp/aapt-arm-pie 
