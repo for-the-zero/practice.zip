@@ -1,0 +1,142 @@
+body{
+    background-color: #CCCCEE;
+    margin: 0px;
+}
+h1{
+    color: darkblue;
+}
+p{
+    color: darkgreen;
+}
+#ptest1{
+    color: tomato;
+    background-color: darkred;
+
+    font-family: 'consolas','Lucida Sans'; /*后面的为备用*/
+    font-weight: bold;
+
+    border-style: dashed;
+    border-width: 4.3px;
+    border-color: rgb(0, 255, 136);
+    border-radius: 50px;
+    padding: 15px;
+}
+.ptest2{
+    color: rgb(200, 0, 0);
+
+    text-decoration: cyan wavy underline;
+    font-size: 18px;
+
+    border-top-style: dotted;
+    border-left-style: double;
+    border-right-style: solid;
+    border-bottom-style: groove;
+    border-width: 7px;
+}
+
+
+#box1{
+    border: 5px solid;
+    width: 200px;
+    height: 210px;
+    background: lightskyblue;
+
+    /*
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+    margin: 50%; 左边缘居中
+    margin: auto; 居中
+    */
+    margin-left: auto;
+}
+
+
+img{  /*div适用*/
+    float: right;
+}
+
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: tomato;
+}
+a:active{
+    color: navy;
+}
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: blue;
+}
+/*
+li:nth-child(3){
+    background-color: blue;
+}
+*/
+li:nth-child(even){
+    background-color: blue;
+}
+li:nth-child(2n-1){
+    background-color: aqua;
+}
+
+
+#ptest3::first-letter{
+    font-size: 40px;
+    font-style: italic;
+}
+#ptest3::first-line{
+    color: black;
+}
+#list2 li::before{
+    content: "🤣";
+}
+#litest1::after{
+    content: "😅";
+}
+#list2 li::marker{
+    color: green;
+}
+p::selection{
+    color: white;
+    background: black;
+}
+
+
+#shadowtest1{
+    color: black;
+    text-shadow: 7px 7px 3px darkblue, 0px 0px 10px red; /*x和y轴偏移 模糊 颜色*/
+}
+#shadowtest1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+.fa-house{
+    color: grey;
+}
+
+
+#box2{
+    border: 5px;
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+
+    /*
+    transform: translate(50px, 50px); 移动位置
+    transform: rotateX(180deg); 旋转
+    transform: scale(2,2); 拉伸
+    transform: skew(45deg,45deg); 角度拉伸
+    transform: matrix(1,0,0,1,0,0); 结合
+    */
+    transform: matrix(2,0,0,2,10,100);
+}

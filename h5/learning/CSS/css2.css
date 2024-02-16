@@ -1,0 +1,50 @@
+#box1{
+    border: 5px solid;
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#box2{
+    border: 5px solid;
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+
+    position: absolute;
+}
+
+#box3{
+    border: 5px solid;
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+#box4{
+    border: 5px solid;
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#box5{
+    border: 5px solid;
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+}

@@ -1,0 +1,57 @@
+div{
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    font-size: 130px;
+    text-align: center;
+
+    animation: 1s ease-out 3s infinite running a1
+    /*
+    animation: a1;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    */
+    
+}
+
+@keyframes a1 {
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+
+
+#box2{
+    animation: 1s ease-out 3s infinite running a2
+}
+@keyframes a2 {
+    100%{transform: rotateZ(360deg);}
+}
+
+#box3{
+    animation: 1s ease-out 3s infinite running a3
+}
+@keyframes a3 {
+    50%{opacity: 0;}
+}
+
+#box4{
+    animation: 1s ease-out 3s infinite running a4
+}
+@keyframes a4 {
+    50%{transform: scale(0.5,0.5);}
+}
+
+#box5{
+    animation: 3s ease-out 3s infinite running a5
+}
+@keyframes a5 {
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: aqua;}
+    100%{background-color: blue;}
+}

@@ -1,0 +1,78 @@
+.f1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.f1i{
+    flex: 1;
+    background-color: aquamarine;
+}
+
+
+.f2{
+    display: flex;
+    flex-direction: row;
+}
+.f2i1{
+    flex: 1;
+    background-color: skyblue;
+}
+.f2i2{
+    flex: 2;
+    background-color: seagreen;
+}
+.f2i3{
+    flex: 3;
+    background-color: orange;
+}
+
+
+.f3{
+    display: flex;
+    flex-direction: row;
+    background-color: darkgray;
+    height: 72px;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f4{
+    display: flex;
+    flex-direction: row;
+    background-color: lightcyan;
+    justify-content: space-between;
+}
+.f5{
+    display: flex;
+    flex-direction: row;
+    background-color: lightsalmon;
+    justify-content: space-around;
+}
+
+
+
+
+
+.g1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 20px 50px;
+    gap: 10px;
+}
+.g1i{
+    background-color: brown;
+}
+
+.g2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 50px;
+}
+.g2i{
+    background-color: chocolate;
+}

@@ -1,0 +1,76 @@
+body{
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+#bg{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+#fi{
+    display: block;
+    position: relative;
+    margin: 20px 0 20px;
+    width: 300px;
+}
+
+#fi input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #FFFFFF solid;
+    width: 100%;
+    padding: 10px 0;
+    color: #FFFFFF;
+    
+}
+
+#fi label{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+button{
+    border: 0;
+    background-color: lightblue;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+p{
+    font-size: 10px;
+}
+
+a{
+    color: lightblue;
+    border: 0;
+    text-decoration: 0;
+}
+
+/*********************/
+
+#fi input:focus,#fi input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+#fi input:focus + label,#fi input:focus + label{
+    opacity: 0.25;
+    transform: translateY(-15px);
+}

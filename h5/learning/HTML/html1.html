@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <title>learning page for myself</title>
+        <!--
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+        -->
+</head>
+    <body>
+        <!-- :P -->
+        <h1>Learning!!!</h1>
+        <p>text1</p><p>text2</p>
+        <p>text3<br/>text4</p>
+        
+        <b>bold</b> <i>italic</i> <ins>inserted</ins> <del>deleteed</del> <br/>
+        normal <big>big</big> <small>small</small> normal<br/>
+        x<sup>2</sup> CO<sub>2</sub><br/>
+        <mark>mark</mark> 
+        <blockquote cite="html2.html">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolorem inventore eius itaque qui nisi magnam commodi? Amet fugiat modi ullam. Aut dolor consequuntur fugiat. Deleniti dolore unde culpa hic?
+        </blockquote>
+        <hr/>
+
+
+        <a href="https://example.com/" target=_blank title="test">link-newtab</a>
+        <br/>
+        <img src="src/HTML5.png"
+            height="50" width="50"
+            alt="for screen reader"
+            title="title">
+        <a href="https://example.com/" target="_blank">
+            <img src="src/HTML5.png"
+            height="50" width="50"
+            title="with link">
+        </a>
+        <br/>
+
+
+
+        <audio src="src/example audio.mp3" controls autoplay muted loop></audio>
+        <audio controls>
+            <source src="src/example audio.mp3">
+        </audio>
+        <br/>
+        <video src="src/example video.mp4" width="500" controls></video>
+        <hr/>
+
+
+
+        <ul>
+            <li>list obj 1</li>
+            <li>list obj 2</li>
+            <li>list obj 3
+                <ul>
+                    <li>child</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ol>
+            <li>list obj 1</li>
+            <li>list obj 2</li>
+            <li>list obj 3
+                <ol>
+                    <li>child</li>
+                </ol>
+            </li>
+        </ol>
+
+        <dl>
+            <dt>sth to</dt><dd>describing</dd>
+            <dt>sth to</dt><dd>describing</dd>
+        </dl>
+        <hr/>
+
+
+
+        <table bgcolor="grey" width="500">
+            <tr bgcolor="lightgrey">
+                <th width="200">a1-----h</th>
+                <th>b1-----h</th>
+                <th>c1-----h</th>
+                <th>d1-----h</th>
+            </tr>
+            <tr>
+                <td>a2</td>
+                <td>b2</td>
+                <td>c2</td>
+                <td>d2</td>
+            </tr>
+            <tr align="center">
+                <td>a3</td>
+                <td>b3</td>
+                <td>c3</td>
+                <td>d3</td>
+            </tr>
+        </table>
+        <hr>
+
+
+
+        <iframe src="html2.html" style="border:0;" width="500" height="250"></iframe>
+        
+        <a href="html2.html" target="_blank">
+            <button>to this page</button>
+            <button disabled>but disabled</button>
+        </a><br>
+        <button style="border: 0;">nothing</button>
+        <button onclick="ftest1()" style="border-radius: 30px; border-color: black;">to something</button>
+        <span id="test1">nothing</span>
+        <script>
+            function ftest1(){
+                document.getElementById('test1').innerText= 'something';
+            }
+        </script>
+        <hr>
+
+
+
+        <form action="page.php" method="get">
+
+            <label for="finput1">name:</label>
+            <input type="text" id="finput1" name="finput1" placeholder="ftz">
+            <label for="finput2">password:</label>
+            <input type="password" id="finput2" name="finput2" required maxlength="3">
+
+            <label for="finput3">email:</label>
+            <input type="email" id="finput3" name="finput3">
+            <label for="finput4">tel:</label>
+            <input type="tel" id="finput4" name="finput4">
+            <label for="finput5">date:</label>
+            <input type="date" id="finput5" name="finput4">
+            <label for="finput6">number:</label>
+            <input type="number" id="finput5" name="finput6" min="0" max="10" value="5">
+
+
+            <br>
+            <label for="fradiogroup1">radio:</label>
+            <label for="1">1</label>
+            <input type="radio" id="fradio1" name="fradiogroup1" value="1">
+            <label for="2">2</label>
+            <input type="radio" id="fradio2" name="fradiogroup1" value="2">
+
+
+            <br>
+            <label for="fselect">select:</label>
+            <select id="fselect" name="fselect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+
+            <div>
+                <label for="fcb">checkbox:</label>
+                <input type="checkbox" id="fcb" name="fcb">
+            </div>
+
+
+            <br>
+            <button type="reset">reset</button><button type="submit">submit</button>
+
+
+        </form>
+        <br>
+
+        <!--
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+        -->
+    </body>
+</html>

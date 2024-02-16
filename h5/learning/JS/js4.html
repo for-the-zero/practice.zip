@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a title</title>
+</head>
+<body>
+    <h1 class="demo1" id="demo1">Lorem ipsum dolor sit amet</h1>
+    <p id="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <img src="https://dummyimage.com/250x180/000/fff.png" id="demopic"></body>
+
+    <div id="demo2"
+        style="height: 100px;width: 100px;background-color: brown;font-size: 50px;color: white;"
+        onmouseover="this.innerHTML = ':D'" 
+        onmouseout="this.innerHTML = ':('"> :(</div>
+    <div 
+        style="height: 60px;width: 120px;background-color: red;font-size: 20px;color: white;"
+        onmousedown="this.innerHTML = '(/▽＼)'" 
+        onmouseup="this.innerHTML = 'ヾ(•ω•`)o'"> ヾ(•ω•`)o</div>
+
+    <div id="demo3"></div>
+    <div id="demo5">
+        <p id="demo4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="demo6">Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+
+    <button onclick="timeoutdemo = setTimeout(function(){alert('3s later!');},3000);">wait 3s</button>
+    <button onclick="clearTimeout(timeoutdemo);">clear timeout</button>
+    <button onclick="intervaldemo = setInterval(function(){alert('3s later!');},3000);">loop 3s</button>
+    <button onclick="clearTimeout(intervaldemo);">clear interval</button>
+
+    <br>
+    <input id="demo7" type="number" min="100" max="300" required>
+    <button onclick="demo7_f()">check</button>
+
+
+    <script src="js4.js"></script>
+</body>
+</html>
