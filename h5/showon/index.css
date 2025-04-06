@@ -1,0 +1,107 @@
+:root{
+    --md-sys-color-primary: #006398;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #cbe5ff;
+    --md-sys-color-on-primary-container: #001d31;
+    --md-sys-color-secondary: #50606f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #d4e4f6;
+    --md-sys-color-on-secondary-container: #0d1d2a;
+    --md-sys-color-tertiary: #66587a;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #eedcff;
+    --md-sys-color-on-tertiary-container: #221534;
+    --md-sys-color-error: #ba1b1b;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad4;
+    --md-sys-color-on-error-container: #410001;
+    --md-sys-color-background: #fcfcff;
+    --md-sys-color-on-background: #1a1c1e;
+    --md-sys-color-surface: #fcfcff;
+    --md-sys-color-on-surface: #1a1c1e;
+    --md-sys-color-surface-variant: #dee3ea;
+    --md-sys-color-on-surface-variant: #41474d;
+    --md-sys-color-outline: #72777e;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-inverse-surface: #2f3032;
+    --md-sys-color-inverse-on-surface: #f0f0f3;
+    --md-sys-color-inverse-primary: #90cdff;
+}
+
+body{
+    font-family: 'Google Sans', 'Noto Sans SC';
+    color: #202020;
+    background-color: var(--md-sys-color-background);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+span{
+    font-size: 1.25rem;
+    width: 20%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 525px;
+    padding: 10px;
+}
+.selections{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 70vw;
+    max-width: 525px;
+    align-items: center;
+    box-sizing: border-box;
+}
+input[type="color"]{
+    border-radius: 0px;
+    border-color: transparent;
+    background-color: var(--md-sys-color-background);
+    width: 20%;
+}
+md-outlined-text-field{
+    max-height: 200px;
+    width: 80%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 525px;
+    margin-bottom: 20px;
+}
+.start-btn{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+@media screen and (max-aspect-ratio: 1/1){
+    .header,.container{
+        width: 90vw;
+        max-width: 90vw;
+    }
+    .selections{
+        width: 100%;
+        max-width: 100%;
+    }
+}
