@@ -1,0 +1,12 @@
+- name: scrcpy
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1920"
+- name: scrcpy 崩铁
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1080 --new-display=1260x2800 --start-app=com.miHoYo.hkrpg"
+- name: scrcpy 原神
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1920 --new-display=1260x2800 --start-app=com.miHoYo.Yuanshen"
+- name: scrcpy 通义
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1920 --new-display=1260x2800 --start-app=com.aliyun.tongyi"
+- name: scrcpy 清言
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1920 --new-display=1260x2800 --start-app=com.zhipuai.qingyan"
+- name: scrcpy 元宝
+  cmd: "scrcpy --no-audio --max-fps=60 --max-size=1920 --new-display=1260x2800 --start-app=com.tencent.hunyuan.app.chat"
