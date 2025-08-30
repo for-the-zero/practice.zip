@@ -1,0 +1,63 @@
+{
+  "name": "snapshotscreeen",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "for_the_zero",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^37.2.4",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6"
+  },
+  "build": {
+    "appId": "io.forthezero.sss",
+    "productName": "SnapShotScreen",
+    "directories": {
+      "output": "builds"
+    },
+    "files": [
+      "/**/*",
+      "node_modules/**/*",
+      "index.js",
+      "icon.png",
+      "!**/node_modules/@nut-tree-fork/node-mac-permissions/**",
+      "!**/node_modules/@nut-tree-fork/node-mac-permissions/**/*"
+    ],
+    "extraFiles": [
+      {
+        "from": "config.json",
+        "to": "config.json"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico",
+      "createStartMenuShortcut": true
+    },
+    "extraResources": [
+      {
+        "from": "./elevate.exe",
+        "to": "./elevate.exe"
+      }
+    ]
+  }
+}
