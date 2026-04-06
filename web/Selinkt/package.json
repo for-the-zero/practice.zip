@@ -1,0 +1,21 @@
+{
+  "name": "selinkt",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.html",
+    "build": "bun run build.ts"
+  },
+  "dependencies": {
+    "bun-plugin-tailwind": "^0.1.2",
+    "react": "^19",
+    "react-dom": "^19",
+    "sketchbook-ui": "^1.0.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/bun": "latest"
+  }
+}
