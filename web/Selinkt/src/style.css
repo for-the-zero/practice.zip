@@ -1,1 +1,6 @@
+@import url("https://fontsapi.zeoseven.com/192/main/result.css");
 @import "tailwindcss";
+body, * {
+    font-family: "Yozai" !important;
+    font-weight: normal;
+}

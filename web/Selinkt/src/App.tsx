@@ -71,9 +71,14 @@ export function App() {
                 <Divider variant='zigzag' />
                 <Accordion className='w-full max-w-114514!'>
                     {qry.links.map((l, i) => (
-                        <AccordionItem key={i} title={l.name} defaultOpen>
-                            <a href={l.url} target={qry.tgb ? '_blank' : '_self'} className='text-center text-orange-600 text-2xl underline block break-all'>{l.url}</a>
-                        </AccordionItem>
+                        // <AccordionItem key={i} title={l.name} defaultOpen>
+                        //     <a href={l.url} target={qry.tgb ? '_blank' : '_self'} className='text-center text-orange-600 text-2xl underline block break-all'>{l.url}</a>
+                        // </AccordionItem>
+                        <Tooltip content={<a href={l.url} target={qry.tgb ? '_blank' : '_self'} className='text-orange-600 underline'>{l.url}</a>} placement="top" key={i}>
+                            <a href={l.url} target={qry.tgb ? '_blank' : '_self'}>
+                                <Button>{l.name}</Button>
+                            </a>
+                        </Tooltip>
                     ))}
                 </Accordion>
             </Card>
