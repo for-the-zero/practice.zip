@@ -1,5 +1,5 @@
-import { Button, Input, Textarea, Select, Switch } from "sketchbook-ui";
-import { use, useEffect } from "react";
+import { Button, Input, Textarea, Select, Switch, Divider, useToast } from "sketchbook-ui";
+import { useEffect } from "react";
 export function Creator({ qry, setQry, um, setUm }: { qry: queryfmt, setQry: React.Dispatch<React.SetStateAction<queryfmt>>, um: 'srch'|'hash', setUm: React.Dispatch<React.SetStateAction<'srch'|'hash'>> }) {
 
     useEffect(()=>{
@@ -10,6 +10,7 @@ export function Creator({ qry, setQry, um, setUm }: { qry: queryfmt, setQry: Rea
             window.history.replaceState(null, '', window.location.pathname + '#' + btoa(new TextEncoder().encode(json).reduce((s, b) => s + String.fromCharCode(b), "")));
         };
     }, [qry, um]);
+    const { showToast } = useToast();
 
 
     return (
@@ -48,6 +49,13 @@ export function Creator({ qry, setQry, um, setUm }: { qry: queryfmt, setQry: Rea
             </div>
             <div className="ml-auto">
                 <Button size="sm" onClick={()=>{setQry((prev)=>({...prev, links: [...prev.links, {name: '', url: ''}]}))}}>Add New Link</Button>
+            </div>
+            <Divider variant="dashed" />
+            <div className="flex flex-row justify-center items-center">
+                <Button onClick={()=>{
+                    navigator.clipboard.writeText(window.location.href);
+                    showToast('Copied!', 'success');
+                }} typography={{fontWeight: 'bold'}}>√ Copy URL</Button>
             </div>
         </div>
     );

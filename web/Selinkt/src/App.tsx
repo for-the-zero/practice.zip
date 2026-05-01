@@ -1,4 +1,4 @@
-import { Tooltip, Button, Modal, ToastContainer, useToast, Card, Divider, Accordion, AccordionItem } from 'sketchbook-ui';
+import { Tooltip, Button, Modal, ToastContainer, useToast, Card, Divider, Accordion } from 'sketchbook-ui';
 import { Creator } from './Creator';
 import { useState } from 'react';
 
